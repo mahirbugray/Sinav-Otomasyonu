@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D69EF39-6E31-4A36-B71D-8733269E3F80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SinavSistemi</RootNamespace>
+    <AssemblyName>SinavSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAnaEkran.Designer.cs">
+      <DependentUpon>AdminAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirişEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirişEkranı.Designer.cs">
+      <DependentUpon>GirişEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciAnaEkran.Designer.cs">
+      <DependentUpon>OgrenciAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciGiris.Designer.cs">
+      <DependentUpon>OgrenciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciKayit.Designer.cs">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrSifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrSifreDegistir.Designer.cs">
+      <DependentUpon>OgrSifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinavSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinavSayfasi.Designer.cs">
+      <DependentUpon>SinavSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinavSorumlusuGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinavSorumlusuGiris.Designer.cs">
+      <DependentUpon>SinavSorumlusuGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglantisi.cs" />
+    <Compile Include="SınavSorumlusuAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SınavSorumlusuAnaEkran.Designer.cs">
+      <DependentUpon>SınavSorumlusuAnaEkran.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAnaEkran.resx">
+      <DependentUpon>AdminAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirişEkranı.resx">
+      <DependentUpon>GirişEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciAnaEkran.resx">
+      <DependentUpon>OgrenciAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciGiris.resx">
+      <DependentUpon>OgrenciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciKayit.resx">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrSifreDegistir.resx">
+      <DependentUpon>OgrSifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SinavSayfasi.resx">
+      <DependentUpon>SinavSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinavSorumlusuGiris.resx">
+      <DependentUpon>SinavSorumlusuGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SınavSorumlusuAnaEkran.resx">
+      <DependentUpon>SınavSorumlusuAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

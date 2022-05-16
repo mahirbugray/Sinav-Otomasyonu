@@ -1,0 +1,58 @@
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.exe.config
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.exe
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.pdb
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.AssemblyReference.cache
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.SuggestedBindingRedirects.cache
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.Properties.Resources.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.GenerateResource.cache
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.CoreCompileInputs.cache
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.exe
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.pdb
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.GirişEkranı.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrenciKayit.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.AdminGiris.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrenciGiris.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SinavSorumlusuGiris.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SınavSorumlusuAnaEkran.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.AdminAnaEkran.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.ogrenciAnaEkran.resources
+C:\Users\yusfa\Desktop\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrSifreDegistir.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.exe.config
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.exe
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.pdb
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.AssemblyReference.cache
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.SuggestedBindingRedirects.cache
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.AdminAnaEkran.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.AdminGiris.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.GirişEkranı.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.ogrenciAnaEkran.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrenciGiris.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrenciKayit.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrSifreDegistir.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.Properties.Resources.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SinavSorumlusuGiris.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SınavSorumlusuAnaEkran.resources
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.GenerateResource.cache
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.CoreCompileInputs.cache
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.exe
+C:\Users\yusfa\Desktop\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.pdb
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.exe.config
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.exe
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\bin\Debug\SinavSistemi.pdb
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.AssemblyReference.cache
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.SuggestedBindingRedirects.cache
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.AdminAnaEkran.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.AdminGiris.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.GirişEkranı.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.ogrenciAnaEkran.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrenciGiris.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrenciKayit.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.OgrSifreDegistir.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.Properties.Resources.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SinavSorumlusuGiris.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SınavSorumlusuAnaEkran.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.GenerateResource.cache
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.csproj.CoreCompileInputs.cache
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.exe
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.pdb
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SinavSayfasi.resources
