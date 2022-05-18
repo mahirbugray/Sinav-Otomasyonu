@@ -22,7 +22,7 @@ namespace SinavSistemi
         {
             Application.Exit();
         }
-
+        //Sınav sorumlusu için database den kullanıcı adı ve şifresini çekip kontrol ettiriyoruz dogru bilirse giriş yapabiliyor. 
         private void btngirisyap_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select * From TBLSINAVSORUMLUSU where KullaniciAdi=@p1 and Sifre=@p2", baglanti.baglantı());

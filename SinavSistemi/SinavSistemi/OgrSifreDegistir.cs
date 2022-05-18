@@ -22,7 +22,7 @@ namespace SinavSistemi
         {
             Application.Exit();
         }
-
+        //burda ogrenci kullanıcı adına giriyor ve eger dogruysa şifre isteniyor şifreyi yazdıgında yeni şifresi database kaydediliyor
         private void btngirisyap_Click(object sender, EventArgs e)
         {
             

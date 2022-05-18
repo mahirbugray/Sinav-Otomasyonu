@@ -134,6 +134,10 @@ namespace SinavSistemi
             seviye = 7;
             lblseviye.Text = seviye.ToString();
         }
+        //seviyesine gore tutuldu seviye kacsa ordan soruyu getiriyoruz ve 6 SİGMA burda yapıldı 
+        //hangi butona basılırsa ordan bilgiyi , seviyesini ve tarihini alıyor ona gore soru getiriryor eger dogru yaparsan seviye 3 ise mesela
+        //sonraki cozulebilme tarihini 90 gun yani 3 ay sonrasına atıyor ve eger gun ile bugunku tarih bir degilse onu soruyu o gun gelene 
+        //butona ne kadar basarsan bas soruyu getrimiyor
         private void btndevamet_Click(object sender, EventArgs e)
         {
 
@@ -155,6 +159,7 @@ namespace SinavSistemi
                 SqlDataReader dr = cmd.ExecuteReader();
                 while(dr.Read())
                 {
+                    
                     lblID.Text = dr["soruID"].ToString();
                     textBox1.Text = (dr["soru"].ToString());
                     Acvpbtn.Text = (dr["A"].ToString());
@@ -273,7 +278,7 @@ namespace SinavSistemi
             Dcvpbtn.Enabled = false;
         }
         
-        
+        //burda butonlar ile atamalar yapıldı mesela eger dogru bilirse yani eşitlik varsa seviyeyi bir arttırıp database update et
         //string tarih = DateTime.Now.ToString();
         private void Acvpbtn_Click(object sender, EventArgs e)
         {
@@ -294,7 +299,13 @@ namespace SinavSistemi
             }
             else if(Acvpbtn.Text != lbldogru.Text)
             {
-                Acvpbtn.BackColor = Color.Red;
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2",seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();  
+                    Acvpbtn.BackColor = Color.Red;
+
             }
                 btndevamet.Enabled = true;
                 Acvpbtn.Enabled = false;
@@ -320,6 +331,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Acvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -346,6 +362,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Acvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -372,6 +393,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Acvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -398,6 +424,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Acvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -440,7 +471,12 @@ namespace SinavSistemi
             }
             else if (Bcvpbtn.Text != lbldogru.Text)
             {
-                Bcvpbtn.BackColor = Color.Red;
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
+                    Bcvpbtn.BackColor = Color.Red;
             }
             btndevamet.Enabled = true;
             Acvpbtn.Enabled = false;
@@ -466,6 +502,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Bcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -492,6 +533,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Bcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -518,6 +564,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Bcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -544,6 +595,11 @@ namespace SinavSistemi
                 }
                 else if (Acvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Bcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -584,7 +640,12 @@ namespace SinavSistemi
             }
             else if (Ccvpbtn.Text != lbldogru.Text)
             {
-                Ccvpbtn.BackColor = Color.Red;
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
+                    Ccvpbtn.BackColor = Color.Red;
             }
             btndevamet.Enabled = true;
             Acvpbtn.Enabled = false;
@@ -610,6 +671,11 @@ namespace SinavSistemi
                 }
                 else if (Ccvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Ccvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -636,6 +702,11 @@ namespace SinavSistemi
                 }
                 else if (Ccvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Ccvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -662,6 +733,11 @@ namespace SinavSistemi
                 }
                 else if (Ccvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Ccvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -688,6 +764,11 @@ namespace SinavSistemi
                 }
                 else if (Ccvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Ccvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -729,7 +810,12 @@ namespace SinavSistemi
                 }
             else if (Dcvpbtn.Text != lbldogru.Text)
             {
-                Dcvpbtn.BackColor = Color.Red;
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
+                    Dcvpbtn.BackColor = Color.Red;
             }
             btndevamet.Enabled = true;
             Acvpbtn.Enabled = false;
@@ -755,6 +841,11 @@ namespace SinavSistemi
                 }
                 else if (Dcvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Dcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -781,6 +872,11 @@ namespace SinavSistemi
                 }
                 else if (Dcvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Dcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -807,6 +903,11 @@ namespace SinavSistemi
                 }
                 else if (Dcvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Dcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;
@@ -833,6 +934,11 @@ namespace SinavSistemi
                 }
                 else if (Dcvpbtn.Text != lbldogru.Text)
                 {
+                    seviye = 1;
+                    SqlCommand cmdd = new SqlCommand("update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblID.Text) + "'", bgl3.baglantı());
+                    cmdd.Parameters.AddWithValue("@p2", seviye.ToString());
+                    cmdd.ExecuteNonQuery();
+                    bgl3.baglantı().Close();
                     Dcvpbtn.BackColor = Color.Red;
                 }
                 btndevamet.Enabled = true;

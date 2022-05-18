@@ -18,6 +18,7 @@ namespace SinavSistemi
             InitializeComponent();
         }
         SqlBaglantisi bgl = new SqlBaglantisi();
+        //lodaing fonksiyonu ile datagridviewe istedigimiz degerleri getiriyoruz
         public void loading()
         {
             DataTable dt = new DataTable();
@@ -29,7 +30,7 @@ namespace SinavSistemi
         {
             loading();
         }
-
+        //sınav sorumlusunda yazılan sorular tabloda sorudurumu false olarak tutuluyor eger admin onaylarsa sorudurumu true olup artık sorularda gisteriliyor 
         private void btnekle_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("update TBLSORUHAVUZU set sorudurumu=@p2,cozumseviyesi=@p3 where soruID=@p1 ", bgl.baglantı());

@@ -22,7 +22,7 @@ namespace SinavSistemi
         {
             Application.Exit();
         }
-
+        //ogrenci burdan kayıt kapmak isterse bilgilerini yazıp bizde onları databasede kaydediyoruz ve ogrenci kaydı olusuyor
         private void btnkayıtyap_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("insert into TBLOGRENCI (Ad,Soyad,Sifre,KullaniciAdi) values (@p1,@p2,@p3,@p4)",bagln.baglantı());

@@ -18,7 +18,7 @@ namespace SinavSistemi
             InitializeComponent();
         }
         SqlBaglantisi bgll =new SqlBaglantisi();
-
+        //Fonksiyon kullanıp ekran her yuklendiginde soruları datagridviewde verileri gostermesini sagliyoruz 
         public void load()
 
         {
@@ -29,15 +29,11 @@ namespace SinavSistemi
         }
         private void SınavSorumlusuAnaEkran_Load(object sender, EventArgs e)
         {
-           /* DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From TBLSORUHAVUZU",bgll.baglantı());
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;*/
            load();
         }
 
 
-
+        //Soru ekleme yapıp sqle atıyoruz ama sorudurumu false olarak cunku admin onaylayacak ve ayrıyetten textboxlerdeki verileri sqle attık
         private void btnekle_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("insert into TBLSORUHAVUZU (soru,A,B,C,D,dogrucevap,derslerID,sorudurumu) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8)",bgll.baglantı());
@@ -54,7 +50,7 @@ namespace SinavSistemi
             MessageBox.Show("Soru eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
             load();
         }
-
+        //cellclick yapıp verileri txtboxye yazdırdık sonra delete sorgusu ile veritabanından soruyu sildirdik
         private void btnsil_Click(object sender, EventArgs e)
         {
             SqlCommand cmd2 = new SqlCommand("Delete from TBLSORUHAVUZU where soruID=@p1", bgll.baglantı());
@@ -64,7 +60,7 @@ namespace SinavSistemi
             MessageBox.Show("Soru silindi","Uyarı",MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             load();
         }
-
+        //cellclick bize guncelleme ve silme kısmında txtboxlere datagridviewdeki verileri atıyor
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int secilen = dataGridView1.SelectedCells[0].RowIndex;
@@ -77,7 +73,7 @@ namespace SinavSistemi
             cevaptxt.Text = dataGridView1.Rows[secilen].Cells[6].Value.ToString();
             derstxt.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
         }
-
+        //guncelleme kısmında update sorgusu ile ilk once cellclick yaparak txtboxlere atıyoz ve txtbox de istedigimiz yeri gunncelliyoruz
         private void btnguncelle_Click(object sender, EventArgs e)
         {
             SqlCommand cmd3 = new SqlCommand("Update TBLSORUHAVUZU set soru=@p2,A=@p3,B=@p4,C=@p5,D=@p6,dogrucevap=@p7,derslerID=@p8 where soruID=@p1", bgll.baglantı());

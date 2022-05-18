@@ -21,7 +21,7 @@ namespace SinavSistemi
         {
             Application.Exit();
         }
-
+        // Burada butonla giriş yapma ekranına yönlendiriyoruz
         private void btnogrenci_Click(object sender, EventArgs e)
         {
             OgrenciGiris frm_OgrenciGiris = new OgrenciGiris();

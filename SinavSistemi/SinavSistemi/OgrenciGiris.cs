@@ -23,14 +23,14 @@ namespace SinavSistemi
         {
             Application.Exit();
         }
-
+        //ogrenci kayıt kısmı
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OgrenciKayit frm_OgrenciKayıt = new OgrenciKayit();
             frm_OgrenciKayıt.Show();
             this.Hide();
         }
-
+        //Ogrenci için database den kullanıcı adı ve şifresini çekip kontrol ettiriyoruz dogru bilirse giriş yapabiliyor.
         private void btngirisyap_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select * From TBLOGRENCI where KullaniciAdi=@p1 and Sifre=@p2", bgl.baglantı());
@@ -53,7 +53,7 @@ namespace SinavSistemi
             }
             bgl.baglantı().Close();
         }
-
+        //ogrenci sifremi unnuttum kısmı 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OgrSifreDegistir ogs = new OgrSifreDegistir();

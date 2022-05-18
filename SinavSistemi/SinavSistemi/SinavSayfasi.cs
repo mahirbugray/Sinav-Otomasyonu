@@ -26,7 +26,7 @@ namespace SinavSistemi
         int yanlissayisi=0;
         int seviye = 1;
         string tarih = DateTime.Now.ToString();
-        
+        //sayfa yuklendiginde hangi butonlar enabled olucak onalrı gercekleştırdik
         private void SinavSayfasi_Load(object sender, EventArgs e)
         {
             btndevamet.Text = "SINAVA BAŞLA";
@@ -36,7 +36,7 @@ namespace SinavSistemi
             Ccvpbtn.Enabled = false;
             Dcvpbtn.Enabled = false;
         }
-
+        //TBLSORUHAVUZU ndaki seviyeyi idye gire getirip forma ekledik
         public int soruseviyesi()
 
         {
@@ -52,6 +52,9 @@ namespace SinavSistemi
             return seviyesoru;
         }
         
+        //sorulara RANDOM atama burda gercekleşiyor sonrasında enabledler burda gercekleşiyor her seferinde random olarak
+        //farklı soru atama işlemi burdan gercekleşiyor ve sayac tuttuk her soru geldiginde sayacımız artıyor
+        //arttıgında da yeni bir soru getiriryor ve bunları txtbox gibi toolbox larımıza atıyor
         private void btndevamet_Click(object sender, EventArgs e)
         {
 
@@ -70,11 +73,7 @@ namespace SinavSistemi
             Bcvpbtn.Enabled = true;
             Ccvpbtn.Enabled = true;
             Dcvpbtn.Enabled = true;
-            //SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
-            //SqlCommand cmdd = new SqlCommand("insert into TBLSORUHAVUZU (cozumseviyesi)  values(@p1) ", bgl.baglantı());
-            //SqlCommand komut = new SqlCommand("Select * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
-            //cmdd.Parameters.AddWithValue("@p1", lblseviye.Text);
-            //cmdd.ExecuteNonQuery();
+            /
 
 
             if (sayac == 1)
@@ -99,9 +98,7 @@ namespace SinavSistemi
                 
 
 
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='"+Convert.ToInt32(lblsoruid.Text)+"'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32( lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
 
             }
@@ -122,9 +119,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text)); ;
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
             }
             if (sayac == 3)
@@ -145,9 +140,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
             }
             if (sayac == 4)
@@ -167,9 +160,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
             }
             if (sayac == 5)
@@ -189,9 +180,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
             }
             if (sayac == 6)
@@ -211,9 +200,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+               
                 bgl.baglantı().Close();
             }
             if (sayac == 7)
@@ -233,9 +220,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
             }
             if (sayac == 8)
@@ -255,9 +240,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
             }
             if (sayac == 9)
@@ -277,9 +260,7 @@ namespace SinavSistemi
                     lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
+                
                 bgl.baglantı().Close();
             }
             if (sayac == 10)
@@ -300,9 +281,6 @@ namespace SinavSistemi
 
                 }
 
-                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
-                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
-                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
 
 
@@ -337,17 +315,15 @@ namespace SinavSistemi
                 bgl.baglantı().Close();
                 MessageBox.Show("Sınavınız bitmiştir , Sınav sonucunuz listenize eklendi..", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-
         }
-
-
 
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        //Abutonuna textimizi atadik eger dogru cevap ile dogruysa yeşil renk ver ve dogru sayısını bir arttır
+        //eger dogru cevap ile dogru degilse kırmızı renk ver ve yanlıs sayısını bir arttır
+        //enabledler yine kontrol ediliyor
         private void Acvpbtn_Click(object sender, EventArgs e)
         {
             if(Acvpbtn.Text ==lbldogrucvp.Text)
@@ -379,7 +355,9 @@ namespace SinavSistemi
             Ccvpbtn.Enabled = false;
             Dcvpbtn.Enabled = false;
         }
-
+        //Bbutonuna textimizi atadik eger dogru cevap ile dogruysa yeşil renk ver ve dogru sayısını bir arttır
+        //eger dogru cevap ile dogru degilse kırmızı renk ver ve yanlıs sayısını bir arttır
+        //enabledler yine kontrol ediliyor
         private void Bcvpbtn_Click(object sender, EventArgs e)
         {
             if (Bcvpbtn.Text == lbldogrucvp.Text)
@@ -410,7 +388,9 @@ namespace SinavSistemi
             Ccvpbtn.Enabled = false;
             Dcvpbtn.Enabled = false;
         }
-
+        //Cbutonuna textimizi atadik eger dogru cevap ile dogruysa yeşil renk ver ve dogru sayısını bir arttır
+        //eger dogru cevap ile dogru degilse kırmızı renk ver ve yanlıs sayısını bir arttır
+        //enabledler yine kontrol ediliyor
         private void Ccvpbtn_Click(object sender, EventArgs e)
         {
             if (Ccvpbtn.Text == lbldogrucvp.Text)
@@ -441,7 +421,9 @@ namespace SinavSistemi
             Ccvpbtn.Enabled = false;
             Dcvpbtn.Enabled = false;
         }
-
+        //Dbutonuna textimizi atadik eger dogru cevap ile dogruysa yeşil renk ver ve dogru sayısını bir arttır
+        //eger dogru cevap ile dogru degilse kırmızı renk ver ve yanlıs sayısını bir arttır
+        //enabledler yine kontrol ediliyor
         private void Dcvpbtn_Click(object sender, EventArgs e)
         {
             if (Dcvpbtn.Text == lbldogrucvp.Text)

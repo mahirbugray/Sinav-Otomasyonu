@@ -51,6 +51,7 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.lblID = new System.Windows.Forms.Label();
             this.lblseviye = new System.Windows.Forms.Label();
+            this.lblad = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Bcvpbtn
@@ -202,7 +203,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(781, 621);
+            this.label4.Location = new System.Drawing.Point(780, 518);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 35);
             this.label4.TabIndex = 73;
@@ -213,7 +214,7 @@
             this.lblogrenciid.AutoSize = true;
             this.lblogrenciid.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblogrenciid.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblogrenciid.Location = new System.Drawing.Point(970, 621);
+            this.lblogrenciid.Location = new System.Drawing.Point(969, 518);
             this.lblogrenciid.Name = "lblogrenciid";
             this.lblogrenciid.Size = new System.Drawing.Size(124, 35);
             this.lblogrenciid.TabIndex = 72;
@@ -319,12 +320,24 @@
             this.lblseviye.TabIndex = 82;
             this.lblseviye.Text = "seviye";
             // 
+            // lblad
+            // 
+            this.lblad.AutoSize = true;
+            this.lblad.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblad.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblad.Location = new System.Drawing.Point(972, 92);
+            this.lblad.Name = "lblad";
+            this.lblad.Size = new System.Drawing.Size(20, 15);
+            this.lblad.TabIndex = 84;
+            this.lblad.Text = "ad";
+            // 
             // GecmisSorular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1122, 785);
+            this.Controls.Add(this.lblad);
             this.Controls.Add(this.lblseviye);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.btn6);
@@ -382,5 +395,6 @@
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblseviye;
+        private System.Windows.Forms.Label lblad;
     }
 }

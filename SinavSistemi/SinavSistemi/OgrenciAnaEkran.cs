@@ -20,8 +20,12 @@ namespace SinavSistemi
         SqlBaglantisi bagl = new SqlBaglantisi();
         public string kullaniiciadi;
         public string kullaniciid;
+
+        //ana ekran ne zaman yuklenirse yuklensin kullanıcının ogrenci giriş kısmında girdigi id ile ilgiili yaptığı tum sınav sonucları geliyor
+        //GEÇMİŞ SINAV SONUCLARI
         private void ogrenciAnaEkran_Load(object sender, EventArgs e)
         {
+
             label1.Text = kullaniiciadi.ToString();
             
             DataTable dt = new DataTable();
