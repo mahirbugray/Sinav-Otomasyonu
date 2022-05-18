@@ -83,16 +83,33 @@ GEÇMİŞ SORULARDAN SINAV
 
 ![image](https://user-images.githubusercontent.com/74426348/169091469-7fff8f5e-684b-402b-a4f9-66aafe87920d.png)
 
+SQL'DEKİ ADMİN TABLOSU
 
+![image](https://user-images.githubusercontent.com/74426348/169095407-fdf55dfe-8f5d-493c-84ff-cbba502b2c44.png)
 
+SQL'DEKİ DERSLER TABLOSU
 
+![image](https://user-images.githubusercontent.com/74426348/169094604-03de4093-137f-409f-abde-74983529dd6b.png)
 
+SQL'DEKİ DOGRUSORULAR TABLOSU
 
+![image](https://user-images.githubusercontent.com/74426348/169094760-7d1f276e-f729-42d8-a974-8769545300a6.png)
 
+SQL'DEKİ ÖĞRENCİ TABLOSU
 
+![image](https://user-images.githubusercontent.com/74426348/169094906-ef0a33bd-ae84-4be8-b8ca-8a8b04d54442.png)
 
+SQL'DEKİ SINAV SORUMLUSU TABLOSU
 
+![image](https://user-images.githubusercontent.com/74426348/169095049-2afdaba7-3b65-4181-a3d9-3b4bee6caccf.png)
 
+SQL'DEKİ SONUÇLAR TABLOSU
+
+![image](https://user-images.githubusercontent.com/74426348/169095199-981c0960-d5c3-4ece-a772-9a9b6cc89d3c.png)
+
+SQL'DEKİ SORU HAVUZU TABLOSU
+
+![image](https://user-images.githubusercontent.com/74426348/169095288-8aad34ca-4024-4627-b577-78d895fe4eda.png)
 
 
 
