@@ -6,17 +6,29 @@ PROJENİN AMACI
 PROJEMİZ BUNYESİNDE BULUNDURDUĞUMUZ SENARYOLAR
 
 -Admin, Sınav sorumlusu ve Öğrenci girişi bulunmaktadır.
+
 -Sisteme kayıt olma mevcuttur.
+
 -Sistemde şifremi unuttum kısmı mevcuttur
+
 -Sisteme Soru Ekleme mevcuttur
+
 -Sistemde Soruyu Güncelleme mevcuttur
+
 -Sistemde Soruyu Silme mevcuttur
+
 -Sistemde Soru eklemek için onay verme mevcuttur
+
 -Sistemde SQL tablolarını listeleme mevcuttur
+
 -Sistemden SQL'e veri çekme mevcuttur
+
 -Sistemden SQL'e veri atma mevcuttur
+
 -Sistemde SQL'deki verilerin üzerinde işlem yapma mevcuttur
+
 -Sistemde SQL'den veri çekip İstatistik tutma mevcuttur
+
 -Sİstemde Sınavı Zaman ile tutma mevcuttur
 
 GİRİŞ EKRANI
