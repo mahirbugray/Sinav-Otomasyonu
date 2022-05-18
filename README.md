@@ -113,11 +113,23 @@ SQL'DEKİ SORU HAVUZU TABLOSU
 
 
 
+PROJEDE YARARLANILAN ARAÇLAR VE GEREÇLER
 
+-SQL ve C# dili ile yazıldı. 
 
+-Visual Studio Editorü kullanıldı.
 
+-Gerekli internet sitelerinden yararlanıldı.
 
+PROJEDEKİ GRUP ÜYELERİ
 
+-MUHAMMED YUSUF ALTUNÇ
+
+-MAHİR BUĞRA YAŞAR
+
+-ALPER BUĞRA POLAT
+
+-HAMZA UBEYD ÖKSÜZ
 
 
 
