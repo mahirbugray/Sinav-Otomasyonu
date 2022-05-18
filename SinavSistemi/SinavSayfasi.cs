@@ -21,10 +21,12 @@ namespace SinavSistemi
         SqlBaglantisi bgl = new SqlBaglantisi();
         public string ogrenciID;
         int zaman = 61;
-        int sayac = 1;
+        int sayac = 0;
         int dogrusayisi=0;
         int yanlissayisi=0;
-
+        int seviye = 1;
+        string tarih = DateTime.Now.ToString();
+        
         private void SinavSayfasi_Load(object sender, EventArgs e)
         {
             btndevamet.Text = "SINAVA BAŞLA";
@@ -35,6 +37,21 @@ namespace SinavSistemi
             Dcvpbtn.Enabled = false;
         }
 
+        public int soruseviyesi()
+
+        {
+            int seviyesoru=0;
+            SqlCommand kmt=new SqlCommand("select cozumseviyesi from TBLSORUHAVUZU WHERE soruID=@P1",bgl.baglantı());
+            kmt.Parameters.AddWithValue("@p1",Convert.ToInt32 (lblsoruid.Text));
+            SqlDataReader oku = kmt.ExecuteReader();
+            while (oku.Read())
+            {
+               seviyesoru = Convert.ToInt32( oku[0]);
+            }
+            oku.Close();
+            return seviyesoru;
+        }
+        
         private void btndevamet_Click(object sender, EventArgs e)
         {
 
@@ -53,167 +70,239 @@ namespace SinavSistemi
             Bcvpbtn.Enabled = true;
             Ccvpbtn.Enabled = true;
             Dcvpbtn.Enabled = true;
+            //SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+            //SqlCommand cmdd = new SqlCommand("insert into TBLSORUHAVUZU (cozumseviyesi)  values(@p1) ", bgl.baglantı());
+            //SqlCommand komut = new SqlCommand("Select * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+            //cmdd.Parameters.AddWithValue("@p1", lblseviye.Text);
+            //cmdd.ExecuteNonQuery();
+
 
             if (sayac == 1)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
-
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
+
 
                 }
+                
+
+
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='"+Convert.ToInt32(lblsoruid.Text)+"'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32( lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
 
             }
             if (sayac == 2)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text)); ;
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 3)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 4)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 5)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 6)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 7)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 8)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 9)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
             }
             if (sayac == 10)
             {
-                SqlCommand komut = new SqlCommand("Select *from TBLSORUHAVUZU order by NEWID()", bgl.baglantı());
+                SqlCommand komut = new SqlCommand("Select TOP(1) * from TBLSORUHAVUZU order by NEWID() ", bgl.baglantı());
+
                 SqlDataReader oku = komut.ExecuteReader();
                 while (oku.Read())
                 {
+                    lblsoruid.Text = (oku["soruID"].ToString());
                     textBox1.Text = (oku["soru"].ToString());
                     Acvpbtn.Text = (oku["A"].ToString());
                     Bcvpbtn.Text = (oku["B"].ToString());
                     Ccvpbtn.Text = (oku["C"].ToString());
                     Dcvpbtn.Text = (oku["D"].ToString());
                     lbldogrucvp.Text = (oku["dogrucevap"].ToString());
+                    lblseviye.Text = (oku["cozumseviyesi"].ToString());
 
                 }
+
+                //SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                //komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(lblseviye.Text));
+                //komutt.ExecuteNonQuery();
                 bgl.baglantı().Close();
 
 
@@ -235,11 +324,10 @@ namespace SinavSistemi
                 Bcvpbtn.Enabled = false;
                 Ccvpbtn.Enabled = false;
                 Dcvpbtn.Enabled = false;
-
-                string tarih = DateTime.Now.ToString();
+                //globale aldım asagıdaki veriyi
+                //string tarih = DateTime.Now.ToString();
                 lbltarih.Text = tarih;
-
-
+                
                 SqlCommand cmd = new SqlCommand("insert into TBLSONUCLAR (kullaniciID,dogrusayisi,yanlissayisi,solvedate) values (@p1,@p2,@p3,@p4)", bgl.baglantı());
                 cmd.Parameters.AddWithValue("@p1", lblogrenciid.Text);
                 cmd.Parameters.AddWithValue("@p2", lbldogrusayisi.Text);
@@ -264,6 +352,18 @@ namespace SinavSistemi
         {
             if(Acvpbtn.Text ==lbldogrucvp.Text)
             {
+
+                seviye =2;
+                lblseviye.Text = seviye.ToString();
+                lbltrh.Text = tarih;
+                SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2,cozulmetarihi=@p3 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                komutt.Parameters.AddWithValue("@p2", soruseviyesi()+1);
+                komutt.Parameters.AddWithValue("@p3",Convert.ToDateTime(lbltrh.Text));
+                komutt.ExecuteNonQuery();
+                //SqlCommand cmdd = new SqlCommand("insert into TBLSORUHAVUZU (cozumseviyesi) values (@p1)", bgl.baglantı());
+                //cmdd.Parameters.AddWithValue("@p1", lblseviye.Text);
+                //cmdd.ExecuteNonQuery();
+                //bgl.baglantı().Close();
                 dogrusayisi++;
                 Acvpbtn.BackColor = Color.Green;
             }
@@ -283,6 +383,17 @@ namespace SinavSistemi
         {
             if (Bcvpbtn.Text == lbldogrucvp.Text)
             {
+                seviye =2;
+                lblseviye.Text = seviye.ToString();
+                lbltrh.Text = tarih;
+                SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2,cozulmetarihi=@p3 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(soruseviyesi() + 1));
+                komutt.Parameters.AddWithValue("@p3", Convert.ToDateTime(lbltrh.Text));
+                komutt.ExecuteNonQuery();
+                //SqlCommand cmdd = new SqlCommand("insert into TBLSORUHAVUZU (cozumseviyesi) values (@p1)", bgl.baglantı());
+                //cmdd.Parameters.AddWithValue("@p1", lblseviye.Text);
+                //cmdd.ExecuteNonQuery();
+                //bgl.baglantı().Close();
                 dogrusayisi++;
                 Bcvpbtn.BackColor = Color.Green;
             }
@@ -302,6 +413,17 @@ namespace SinavSistemi
         {
             if (Ccvpbtn.Text == lbldogrucvp.Text)
             {
+                seviye =2;
+                lblseviye.Text = seviye.ToString();
+                lbltrh.Text = tarih;
+                SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2,cozulmetarihi=@p3 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(soruseviyesi() + 1));
+                komutt.Parameters.AddWithValue("@p3", Convert.ToDateTime(lbltrh.Text));
+                komutt.ExecuteNonQuery();
+                //SqlCommand cmdd = new SqlCommand("insert into TBLSORUHAVUZU (cozumseviyesi) values (@p1)", bgl.baglantı());
+                //cmdd.Parameters.AddWithValue("@p1", lblseviye.Text);
+                //cmdd.ExecuteNonQuery();
+                //bgl.baglantı().Close();
                 dogrusayisi++;
                 Ccvpbtn.BackColor = Color.Green;
             }
@@ -321,6 +443,17 @@ namespace SinavSistemi
         {
             if (Dcvpbtn.Text == lbldogrucvp.Text)
             {
+                seviye =2;
+                lblseviye.Text = seviye.ToString();
+                lbltrh.Text =tarih;
+                SqlCommand komutt = new SqlCommand("Update TBLSORUHAVUZU set cozumseviyesi=@p2,cozulmetarihi=@p3 where soruID='" + Convert.ToInt32(lblsoruid.Text) + "'", bgl.baglantı());
+                komutt.Parameters.AddWithValue("@p2", Convert.ToInt32(soruseviyesi() + 1));
+                komutt.Parameters.AddWithValue("@p3", Convert.ToDateTime(lbltrh.Text));
+                komutt.ExecuteNonQuery();
+                //SqlCommand cmdd = new SqlCommand("insert into TBLSORUHAVUZU (cozumseviyesi) values (@p1)", bgl.baglantı());
+                //cmdd.Parameters.AddWithValue("@p1", lblseviye.Text);
+                //cmdd.ExecuteNonQuery();
+                //bgl.baglantı().Close();
                 dogrusayisi++;
                 Dcvpbtn.BackColor = Color.Green;
             }
@@ -349,6 +482,14 @@ namespace SinavSistemi
                 Ccvpbtn.Enabled = false;
                 Dcvpbtn.Enabled = false;    
             }
+        }
+
+        private void btnsnvbitir_Click(object sender, EventArgs e)
+        {
+            GecmisSorular frm = new GecmisSorular();
+            frm.Show();
+            frm.kullanıcıiddd = ogrenciID;
+            this.Hide();
         }
 
         //private void btnsnvbitir_Click(object sender, EventArgs e)

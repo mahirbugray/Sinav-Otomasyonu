@@ -52,6 +52,11 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.btnsnvbitir = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblseviye = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblsoruid = new System.Windows.Forms.Label();
+            this.lbltrh = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -115,9 +120,9 @@
             // 
             this.btndevamet.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btndevamet.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btndevamet.Location = new System.Drawing.Point(840, 579);
+            this.btndevamet.Location = new System.Drawing.Point(794, 579);
             this.btndevamet.Name = "btndevamet";
-            this.btndevamet.Size = new System.Drawing.Size(323, 72);
+            this.btndevamet.Size = new System.Drawing.Size(369, 72);
             this.btndevamet.TabIndex = 53;
             this.btndevamet.Text = "Devam Et";
             this.btndevamet.UseVisualStyleBackColor = false;
@@ -195,7 +200,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(820, 408);
+            this.label2.Location = new System.Drawing.Point(834, 408);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 35);
             this.label2.TabIndex = 68;
@@ -206,7 +211,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(820, 455);
+            this.label3.Location = new System.Drawing.Point(834, 455);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 35);
             this.label3.TabIndex = 69;
@@ -217,7 +222,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(820, 360);
+            this.label4.Location = new System.Drawing.Point(834, 360);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 35);
             this.label4.TabIndex = 71;
@@ -239,7 +244,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(820, 315);
+            this.label5.Location = new System.Drawing.Point(834, 315);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 35);
             this.label5.TabIndex = 73;
@@ -296,12 +301,68 @@
             // 
             this.btnsnvbitir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnsnvbitir.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnsnvbitir.Location = new System.Drawing.Point(840, 651);
+            this.btnsnvbitir.Location = new System.Drawing.Point(794, 651);
             this.btnsnvbitir.Name = "btnsnvbitir";
-            this.btnsnvbitir.Size = new System.Drawing.Size(323, 72);
+            this.btnsnvbitir.Size = new System.Drawing.Size(369, 72);
             this.btnsnvbitir.TabIndex = 77;
-            this.btnsnvbitir.Text = "Sınavı Bitir";
+            this.btnsnvbitir.Text = "Önceden bildiğim sorular";
             this.btnsnvbitir.UseVisualStyleBackColor = false;
+            this.btnsnvbitir.Click += new System.EventHandler(this.btnsnvbitir_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(846, 499);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 35);
+            this.label8.TabIndex = 79;
+            this.label8.Text = "Seviye:";
+            this.label8.Visible = false;
+            // 
+            // lblseviye
+            // 
+            this.lblseviye.AutoSize = true;
+            this.lblseviye.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblseviye.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblseviye.Location = new System.Drawing.Point(997, 499);
+            this.lblseviye.Name = "lblseviye";
+            this.lblseviye.Size = new System.Drawing.Size(87, 35);
+            this.lblseviye.TabIndex = 78;
+            this.lblseviye.Text = "seviye";
+            this.lblseviye.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(1020, 86);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 15);
+            this.label9.TabIndex = 80;
+            this.label9.Text = "soruID";
+            // 
+            // lblsoruid
+            // 
+            this.lblsoruid.AutoSize = true;
+            this.lblsoruid.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblsoruid.Location = new System.Drawing.Point(1068, 86);
+            this.lblsoruid.Name = "lblsoruid";
+            this.lblsoruid.Size = new System.Drawing.Size(42, 15);
+            this.lblsoruid.TabIndex = 81;
+            this.lblsoruid.Text = "soruID";
+            // 
+            // lbltrh
+            // 
+            this.lbltrh.AutoSize = true;
+            this.lbltrh.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbltrh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbltrh.Location = new System.Drawing.Point(579, 639);
+            this.lbltrh.Name = "lbltrh";
+            this.lbltrh.Size = new System.Drawing.Size(70, 35);
+            this.lbltrh.TabIndex = 82;
+            this.lbltrh.Text = "tarih";
             // 
             // SinavSayfasi
             // 
@@ -309,6 +370,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1161, 727);
+            this.Controls.Add(this.lbltrh);
+            this.Controls.Add(this.lblsoruid);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblseviye);
             this.Controls.Add(this.btnsnvbitir);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblzaman);
@@ -366,5 +432,10 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnsnvbitir;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblseviye;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblsoruid;
+        private System.Windows.Forms.Label lbltrh;
     }
 }

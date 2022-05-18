@@ -20,6 +20,7 @@ namespace SinavSistemi
         SqlBaglantisi bgll =new SqlBaglantisi();
 
         public void load()
+
         {
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter("Select soruID,soru,A,B,C,D,dogrucevap,ders From TBLSORUHAVUZU INNER JOIN TBLDERSLER ON TBLSORUHAVUZU.derslerID=TBLDERSLER.dersID", bgll.baglantı());
@@ -39,7 +40,7 @@ namespace SinavSistemi
 
         private void btnekle_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into TBLSORUHAVUZU (soru,A,B,C,D,dogrucevap,derslerID) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7)",bgll.baglantı());
+            SqlCommand cmd = new SqlCommand("insert into TBLSORUHAVUZU (soru,A,B,C,D,dogrucevap,derslerID,sorudurumu) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8)",bgll.baglantı());
             cmd.Parameters.AddWithValue("@p1", sorutxt.Text);
             cmd.Parameters.AddWithValue("@p2", Atxtbox.Text);
             cmd.Parameters.AddWithValue("@p3", Btxtbox.Text);
@@ -47,6 +48,7 @@ namespace SinavSistemi
             cmd.Parameters.AddWithValue("@p5", Dtxtbox.Text);
             cmd.Parameters.AddWithValue("@p6", cevaptxt.Text);
             cmd.Parameters.AddWithValue("@p7", derstxt.Text);
+            cmd.Parameters.AddWithValue("@p8", comboBox1.Text);
             cmd.ExecuteNonQuery();
             bgll.baglantı().Close();
             MessageBox.Show("Soru eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);

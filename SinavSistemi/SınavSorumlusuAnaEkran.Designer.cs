@@ -49,6 +49,8 @@
             this.Ctxtbox = new System.Windows.Forms.TextBox();
             this.Dtxtbox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,11 +124,11 @@
             // 
             this.btnekle.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnekle.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnekle.Location = new System.Drawing.Point(238, 715);
+            this.btnekle.Location = new System.Drawing.Point(191, 715);
             this.btnekle.Name = "btnekle";
-            this.btnekle.Size = new System.Drawing.Size(210, 63);
+            this.btnekle.Size = new System.Drawing.Size(371, 63);
             this.btnekle.TabIndex = 50;
-            this.btnekle.Text = "Soru Ekle";
+            this.btnekle.Text = "Soruyu Admin\'e gönder";
             this.btnekle.UseVisualStyleBackColor = false;
             this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
@@ -134,7 +136,7 @@
             // 
             this.btnsil.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnsil.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnsil.Location = new System.Drawing.Point(536, 715);
+            this.btnsil.Location = new System.Drawing.Point(624, 715);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(210, 63);
             this.btnsil.TabIndex = 51;
@@ -146,7 +148,7 @@
             // 
             this.btnguncelle.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnguncelle.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnguncelle.Location = new System.Drawing.Point(833, 715);
+            this.btnguncelle.Location = new System.Drawing.Point(895, 715);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(210, 63);
             this.btnguncelle.TabIndex = 52;
@@ -187,7 +189,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(868, 198);
+            this.label7.Location = new System.Drawing.Point(685, 198);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 35);
             this.label7.TabIndex = 57;
@@ -197,7 +199,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(570, 197);
+            this.label8.Location = new System.Drawing.Point(461, 197);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 35);
             this.label8.TabIndex = 58;
@@ -207,7 +209,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(296, 197);
+            this.label9.Location = new System.Drawing.Point(239, 197);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(101, 35);
             this.label9.TabIndex = 59;
@@ -218,31 +220,31 @@
             this.Atxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Atxtbox.Location = new System.Drawing.Point(120, 199);
             this.Atxtbox.Name = "Atxtbox";
-            this.Atxtbox.Size = new System.Drawing.Size(161, 34);
+            this.Atxtbox.Size = new System.Drawing.Size(112, 34);
             this.Atxtbox.TabIndex = 60;
             // 
             // Btxtbox
             // 
             this.Btxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btxtbox.Location = new System.Drawing.Point(403, 197);
+            this.Btxtbox.Location = new System.Drawing.Point(346, 197);
             this.Btxtbox.Name = "Btxtbox";
-            this.Btxtbox.Size = new System.Drawing.Size(161, 34);
+            this.Btxtbox.Size = new System.Drawing.Size(110, 34);
             this.Btxtbox.TabIndex = 61;
             // 
             // Ctxtbox
             // 
             this.Ctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Ctxtbox.Location = new System.Drawing.Point(677, 197);
+            this.Ctxtbox.Location = new System.Drawing.Point(568, 197);
             this.Ctxtbox.Name = "Ctxtbox";
-            this.Ctxtbox.Size = new System.Drawing.Size(161, 34);
+            this.Ctxtbox.Size = new System.Drawing.Size(106, 34);
             this.Ctxtbox.TabIndex = 62;
             // 
             // Dtxtbox
             // 
             this.Dtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Dtxtbox.Location = new System.Drawing.Point(977, 197);
+            this.Dtxtbox.Location = new System.Drawing.Point(794, 197);
             this.Dtxtbox.Name = "Dtxtbox";
-            this.Dtxtbox.Size = new System.Drawing.Size(161, 34);
+            this.Dtxtbox.Size = new System.Drawing.Size(113, 34);
             this.Dtxtbox.TabIndex = 63;
             // 
             // button1
@@ -260,12 +262,35 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(916, 196);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 35);
+            this.label6.TabIndex = 65;
+            this.label6.Text = "Durum:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "0"});
+            this.comboBox1.Location = new System.Drawing.Point(1021, 194);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 39);
+            this.comboBox1.TabIndex = 66;
+            // 
             // SınavSorumlusuAnaEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1218, 786);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Dtxtbox);
             this.Controls.Add(this.Ctxtbox);
@@ -320,5 +345,7 @@
         private System.Windows.Forms.TextBox Ctxtbox;
         private System.Windows.Forms.TextBox Dtxtbox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

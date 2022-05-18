@@ -56,3 +56,4 @@ D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavS
 D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.exe
 D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.pdb
 D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.SinavSayfasi.resources
+D:\DERSLER VE PROJELER\Yazılım Yapımı PROJE\SinavSistemi\SinavSistemi\SinavSistemi\obj\Debug\SinavSistemi.GecmisSorular.resources

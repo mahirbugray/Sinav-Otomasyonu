@@ -16,7 +16,7 @@ namespace SinavSistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GirişEkranı());
+            Application.Run(new GecmisSorular());
         }
     }
 }
