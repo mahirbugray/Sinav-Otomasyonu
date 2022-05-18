@@ -73,7 +73,7 @@ namespace SinavSistemi
             Bcvpbtn.Enabled = true;
             Ccvpbtn.Enabled = true;
             Dcvpbtn.Enabled = true;
-            /
+            
 
 
             if (sayac == 1)

@@ -34,6 +34,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnistatistik = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // 
             this.btngirisyap.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btngirisyap.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btngirisyap.Location = new System.Drawing.Point(293, 485);
+            this.btngirisyap.Location = new System.Drawing.Point(79, 485);
             this.btngirisyap.Name = "btngirisyap";
             this.btngirisyap.Size = new System.Drawing.Size(210, 65);
             this.btngirisyap.TabIndex = 40;
@@ -106,12 +107,25 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnistatistik
+            // 
+            this.btnistatistik.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnistatistik.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnistatistik.Location = new System.Drawing.Point(462, 485);
+            this.btnistatistik.Name = "btnistatistik";
+            this.btnistatistik.Size = new System.Drawing.Size(230, 65);
+            this.btnistatistik.TabIndex = 44;
+            this.btnistatistik.Text = "İstatistikler";
+            this.btnistatistik.UseVisualStyleBackColor = false;
+            this.btnistatistik.Click += new System.EventHandler(this.btnistatistik_Click);
+            // 
             // ogrenciAnaEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(797, 562);
+            this.Controls.Add(this.btnistatistik);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
@@ -137,5 +151,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnistatistik;
     }
 }

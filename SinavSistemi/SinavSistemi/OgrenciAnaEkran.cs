@@ -46,5 +46,14 @@ namespace SinavSistemi
         {
             Application.Exit();
         }
+
+        private void btnistatistik_Click(object sender, EventArgs e)
+        {
+            Istatistikler frmm = new Istatistikler();
+            frmm.kullaniciiddd =kullaniciid.ToString();
+            
+            frmm.Show();
+            
+        }
     }
 }
