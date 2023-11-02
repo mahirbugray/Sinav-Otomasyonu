@@ -134,5 +134,5 @@ PROJEDEKİ GRUP ÜYELERİ
 
 
 
-!!!ÖNEMLİ NOT:.bak uzantılı dosyayı kendi veritabanınıza ekleyip çalıştırmanız gerekli.
+!!!ÖNEMLİ NOT:.bak uzantılı veritabanı dosyasını kendi veritabanınıza ekleyip çalıştırmanız gerekli.
 
